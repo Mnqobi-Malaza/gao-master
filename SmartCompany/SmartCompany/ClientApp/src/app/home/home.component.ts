@@ -9,6 +9,12 @@ import { IPerson } from '../models/person-model';
 export class HomeComponent implements OnInit{
   selectedItem = '';
   persons: IPerson;
+ 
+  listItems = [
+    { id: 1, name: 'Mnqobi', surname: 'Malaza', dateOfBirth: '1991-01-03'},
+    { id: 2, name: 'Alper', surname: 'Tlou', dateOfBirth: '1991-01-03' },
+   
+  ];
 
   constructor(private s: PersonService) {}
 

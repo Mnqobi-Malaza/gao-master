@@ -12,6 +12,12 @@ export class FetchDataComponent implements OnInit {
   sub;
   id;
   employeeDetails: IEmployee;
+ 
+  listItems = [
+    { id: 1, startDate: '2020-02-02', role: 'Enginerr', isActive: true, personId:1 },
+    { id: 1, startDate: '2020-02-02', role: 'Enginerr', isActive: true, personId: 2 },
+
+  ];
 
   constructor(private _Activatedroute: ActivatedRoute,
     private _router: Router,
@@ -30,6 +36,8 @@ export class FetchDataComponent implements OnInit {
 
     });
   }
+
+
   public onCancel = () => {
     this._router.navigate(['app-home']);
   }
