@@ -10,10 +10,10 @@ export class PersonService {
   constructor(private _http: HttpClient) { }
 
   getPersons() {
-    return this._http.get("api/Home/Persons");
+    return this._http.get("api/Home/GetPersons");
   }
 
   getEmployeeDetails(id) {
-    return this._http.get("api/Home/Employee/"+ id);
+    return this._http.get("api/Home/GetEmployee/"+ id);
   }
 }

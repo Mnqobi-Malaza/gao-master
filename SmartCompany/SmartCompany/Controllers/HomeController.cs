@@ -28,5 +28,21 @@ namespace SmartCompany.Controllers
 
             return Ok();
         }
+
+        [HttpGet]
+        public IActionResult GetPersons()
+        {
+            _personRepo.GetPersons();
+
+            return Ok();
+        }
+
+        [HttpGet]
+        public IActionResult GetEmployee(int id)
+        {
+            _personRepo.GetEmployee();
+
+            return Ok();
+        }
     }
 }
