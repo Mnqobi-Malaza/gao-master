@@ -1,0 +1,18 @@
+
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>Start Date</th>
+      <th>Role</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employeeDetails">
+      <td>{{ employee.startDate }}</td>
+      <td>{{ employee.role }}</td>
+      <td>{{ employee.isActive }}</td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="cancel" mat-raised-button (click)="onCancel()">Cancel</button>

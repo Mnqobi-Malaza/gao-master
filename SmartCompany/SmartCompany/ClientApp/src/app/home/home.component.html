@@ -1,0 +1,5 @@
+<mat-list role="list">
+  <mat-list-item *ngFor="let person of persons">
+    <td><a [routerLink]="['/app-fetch-data',person.id]">{{person.name}} </a> </td> 
+  </mat-list-item>
+</mat-list>
